@@ -1,5 +1,6 @@
-
+//queen problem 
 class Main {
+    //add if the place is safe or not 
     private static boolean isSafe(boolean[][] board,int row,int col){
         //vertical check
         for(int i=0;i<row;i++){
@@ -17,6 +18,7 @@ class Main {
         }
         return true;
     }
+    //display the board at the end 
     private static void display(boolean[][] board){
         for(boolean[] row: board){
             for(boolean x : row){
@@ -28,6 +30,7 @@ class Main {
             System.out.println();
         }
     }
+    //calling main queen function
     private static int queen(boolean[][] board,int row){
         //base condition
         if(row==board.length){
@@ -47,6 +50,7 @@ class Main {
         }
         return count ;
     }
+    //main method 
     public static void main(String[] args) {
         System.out.println("Jai Bajrang Bali");
         boolean[][] board = new boolean[4][4];
