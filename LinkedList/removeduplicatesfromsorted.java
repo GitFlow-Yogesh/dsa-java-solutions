@@ -7,8 +7,8 @@ public void removeduplicate(){
             }else{
                 current=current.next;
             }
+        }
           //updating tail just in case we remove last node which is duplicate
             tail=current ;
             tail.next=null;
-        }
     }
