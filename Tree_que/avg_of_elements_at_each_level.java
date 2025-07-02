@@ -21,4 +21,4 @@ List<Double> result = new ArrayList<>();
             result.add(elements/lsize);
         }
         return result;
-    }
+
