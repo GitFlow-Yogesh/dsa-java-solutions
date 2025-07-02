@@ -26,3 +26,31 @@ class Solution {
         return root;
     }
 }
+//without que in o(1) time 
+class Solution {
+    public Node connect(Node root) {
+        if (root == null) return null;
+
+        Node leftmost = root;
+
+        while (leftmost.left != null) {
+            Node head = leftmost;
+
+            while (head != null) {
+                // Connect left -> right
+                head.left.next = head.right;
+
+                // Connect right -> next.left (if exists)
+                if (head.next != null) {
+                    head.right.next = head.next.left;
+                }
+
+                head = head.next;
+            }
+
+            leftmost = leftmost.left;
+        }
+
+        return root;
+    }
+}
