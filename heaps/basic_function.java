@@ -52,21 +52,29 @@ public class MinHeap {
         return min;
     }
 
-    private void heapifyDown(int i) {
-        int smallest = i;
-        int left = left(i);
-        int right = right(i);
+    void heapifyDown(int i) {
+    int smallest = i;
 
-        if (left < heap.size() && heap.get(left) < heap.get(smallest))
-            smallest = left;
-        if (right < heap.size() && heap.get(right) < heap.get(smallest))
-            smallest = right;
+    int left = 2 * i + 1;   // left child index
+    int right = 2 * i + 2;  // right child index
 
-        if (smallest != i) {
-            swap(i, smallest);
-            heapifyDown(smallest);
-        }
+    // if left child is smaller than current smallest
+    if (left < heap.size() && heap.get(left) < heap.get(smallest)) {
+        smallest = left;
     }
+
+    // if right child is even smaller
+    if (right < heap.size() && heap.get(right) < heap.get(smallest)) {
+        smallest = right;
+    }
+
+    // if we found a smaller child, swap and go down
+    if (smallest != i) {
+        swap(i, smallest);
+        heapifyDown(smallest); // 👈 keep going down
+    }
+}
+
 
     // Print heap
     public void printHeap() {
