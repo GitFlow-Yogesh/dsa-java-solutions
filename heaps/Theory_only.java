@@ -16,3 +16,19 @@ Min-Heap: The parent node is less than or equal to its children.  == it only sto
   ->You're solving problems that involve sorted order like do sort work first thn next sort work and so on 
 
   
+lets seee baic code = thats it 
+import java.util.*;
+
+public class MaxHeapPQ {
+    public static void main(String[] args) {
+        PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); //max heap 
+         PriorityQueue<Integer> maxPQ = new PriorityQueue<>();      //min heap 
+        maxPQ.add(30);
+        maxPQ.add(10);
+        maxPQ.add(20);
+
+        while (!maxPQ.isEmpty()) {
+            System.out.println(maxPQ.poll());  // Output: 30, 20, 10
+        }
+    }
+}
