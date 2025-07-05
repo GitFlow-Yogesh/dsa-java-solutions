@@ -1,3 +1,4 @@
+//note =use priority que(iska function ye h ki ye sorting order me store krta h by default like min heap so if use reverse thn max heap ho jayega. simple na
 Note = its totally different from tree bcz its elements is stored in arrays not in form of trees and nodes so we dont require nodes just values in array which follow some property
 like = tree- nodes ,left, right      But heap follows tree property but store in array so only int is require with one array 
 Note = it require only 3 things For a node at index i:
