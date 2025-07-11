@@ -30,3 +30,19 @@ public static void main(String[] args) {
                 secondSmallest = num;
             }
         }
+//sometimes they ask for first 3 
+for (int num : arr) {
+            // Skip duplicates
+            if (num == first || num == second || num == third) continue;
+
+            if (first == null || num > first) {
+                third = second;
+                second = first;
+                first = num;
+            } else if (second == null || num > second) {
+                third = second;
+                second = num;
+            } else if (third == null || num > third) {
+                third = num;
+            }
+        }
