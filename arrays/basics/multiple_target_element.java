@@ -1,3 +1,4 @@
+//first of all = its two min question dont take headache .
 //follow this = > Count = (lastIndex - firstIndex + 1)
 //make two function for first and for last occurence :
 //note all code is same as binary search 
