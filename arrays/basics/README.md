@@ -13,4 +13,4 @@ This folder contains beginner-friendly Java programs that cover essential array 
 ### Algo Covered
 Reverse Algo =>used when => u want to rotate the array by k times.<br>
 Moore’s Voting Algorithm => used when => To find the major element in array which appears more than n/2 times 
-    
+Sliding window approach = sum with k(only if array has positive element) , 
