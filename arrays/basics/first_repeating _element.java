@@ -37,3 +37,5 @@ public static int firstRepeatingElement(int[] arr) {
         return -1; // No repeating element
     }
 //amazing question it was 
+//now what if they ask first non repeating element = thn just change this 
+        (freq.get(key) > 1) => (freq.get(key) == 1)
