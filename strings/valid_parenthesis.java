@@ -16,3 +16,31 @@
         }
         return stk.isEmpty();
     }
+//sometime they dont alllow stack 
+public boolean isValid(String s) {
+        char[] stack = new char[s.length()];
+        int top = 0;
+
+        for (char c : s.toCharArray()) {
+            // Push if it's an opening bracket
+            if (c == '(' || c == '{' || c == '[') {
+                stack[top++] = c;
+            } else {
+                // If stack is empty or top doesn't match, return false
+                if (top == 0) return false;
+                char last = stack[top - 1];
+
+                if ((c == ')' && last != '(') ||
+                    (c == '}' && last != '{') ||
+                    (c == ']' && last != '[')) {
+                    return false;
+                }
+
+                // Pop the top
+                top--;
+            }
+        }
+
+        // Stack should be empty if all brackets matched
+        return top == 0;
+    }
