@@ -1,8 +1,9 @@
-//has two question = just one word change 
+//has three question = just one word change 
 public static boolean isSubstring(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();
-
+        //its diff question 
+        //if i add s1+s1 thn ill search for s2 substr it will give me the answer for rotation exist or not 
         if (m > n) return false;
 
         for (int i = 0; i <= n - m; i++) {
