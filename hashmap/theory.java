@@ -1,4 +1,4 @@
-HashMap = A HashMap is a data structure that stores key-value pairs.
+HashMap = A HashMap is a data structure that stores key-value pairs.=default size of hashmap =DEFAULT_INITIAL_CAPACITY = 16;
 When to Use a HashMap=When order doesn't matter,Fast lookups and inserts,when u want to search in O(1) time and insert also using keys
 When not to use = Not thread-safe,Does not maintain insertion or sorted order,
 What is hashcode = for string or something - it generate a unique number , for Integer the number itself (do chatgpt this line if u didnt get)
