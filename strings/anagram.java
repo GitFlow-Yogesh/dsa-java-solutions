@@ -9,7 +9,11 @@ public static boolean areAnagrams(String s1, String s2) {
 
         // Frequency array for lowercase letters
         int[] count = new int[26];
-
+        //directly apply this else below two's
+        for (int i = 0; i < s.length(); i++) {
+            count[s.charAt(i) - 'a']++;  // Add for string s
+            count[t.charAt(i) - 'a']--;  // Subtract for string t
+        }
         // Count characters in s1
         for (int i = 0; i < s1.length(); i++) {
             char c = s1.charAt(i);
