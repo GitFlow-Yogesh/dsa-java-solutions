@@ -8,3 +8,14 @@
         }
         String newStr = new String(arr);  // Convert char array back to string
         System.out.println(newStr);       // Output: hsegoY
+
+
+// if u dont want to use new String(arr) in built thn go this way 
+public static void main(String[] args) {
+        char[] arr = {'Y', 'o', 'g', 'e', 's', 'h'};
+        String result = "";        // use stringbuilder for better storage management u know why right 
+        for (int i = arr.length-1; i >=0; i--) {
+            result += arr[i];  // appending each character manually
+        }
+        System.out.println(result);  // Output: Yogesh
+    }
