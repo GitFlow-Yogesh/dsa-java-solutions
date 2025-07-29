@@ -17,5 +17,5 @@ public static void main(String[] args) {
         for (int i = arr.length-1; i >=0; i--) {
             result += arr[i];  // appending each character manually
         }
-        System.out.println(result);  // Output: Yogesh
+        System.out.println(result);  // Output reverse will be hsegoY
     }
