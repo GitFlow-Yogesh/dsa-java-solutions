@@ -1,3 +1,11 @@
+//if array is sorted = it will print all duplicates 
+        int[] arr={1,2,3,4,4,4,5,6,7,8};
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]==arr[i+1]){
+                System.out.print(arr[i]+" ");
+            }
+        }
+//if array is unsorted 
 //way 1 =bruteforce and simple =using double loop == amazing que but time com = O(N^2) =remember by this way we r not using extra space its constant only
 public class Main {
     public static void main(String[] args) {
