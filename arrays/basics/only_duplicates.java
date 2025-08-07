@@ -27,7 +27,7 @@ public class Main {
                         System.out.println(arr[i]);
                     }
 
-                    break; // break inner loop once duplicate found
+                    break; // break inner loop once duplicate found, remove this line if u want to print no of times u want to print duplicate
                 }
             }
         }
