@@ -16,6 +16,12 @@
                 count = arr[i];
                 mostFreq = (char)(i + 'a');
             }
+            //use below condition when they ask for first non repeating char
+            //     if(arr[i]==1){
+            //     char ch = (char)(i+'a');
+            //     System.out.println(ch);
+            //     break;
+            // }
         }
         
         System.out.println("Most frequent char: " + mostFreq);
