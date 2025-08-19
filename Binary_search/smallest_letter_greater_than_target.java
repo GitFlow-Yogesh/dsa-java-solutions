@@ -1,16 +1,14 @@
+//same as find ceiling but dont check first if statement and make sure we have to written a letter okay
+//so if celing we r returning start here also same right 
 public static char bs(char[] letters, char target) {
         int left = 0, right = letters.length - 1;
-        // char result = letters[0]; // default (wrap-around case)
-
         while (left <= right) {
             int mid = left + (right - left) / 2;
-
-            if (letters[mid] > target) { // possible answer
-                right = mid - 1;        // look left for smaller candidate
+            if (letters[mid] > target) { 
+                right = mid - 1;       
             } else {
-                left = mid + 1;         // look right
+                left = mid + 1;      
             }
         }
-
-        return letters[left%letters.length];
+        return letters[left%letters.length]; //using % ensure safe indexing while returning 
     }
