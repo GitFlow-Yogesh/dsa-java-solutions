@@ -12,3 +12,9 @@ public static char bs(char[] letters, char target) {
         }
         return letters[left%letters.length]; //using % ensure safe indexing while returning 
     }
+
+
+//extra part just for your knowledge why % okay solve this below puzzle thats it 
+// letters = ['c','f','j'], target = 'j'
+// start = 3
+// letters[start % letters.length] = letters[0] = 'c' ✅
