@@ -1,4 +1,4 @@
-//node create
+//node create = where u use int use generic class ex Y and wherever u use Node use Node<Y> thats it itna simple h
 class Node<Y>{
     Y data;
     Node<Y> next;
