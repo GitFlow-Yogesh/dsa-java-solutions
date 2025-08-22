@@ -49,6 +49,7 @@ class Main {
         System.out.println("jai Bajrang Bali");
         //linked list - singular list
         LinkedList list = new LinkedList();
+        LinkedList<Object> ll = new LinkedList<>(); // use this one to ignore warning 
         list.append("Yogesh");
         list.append("Yadav");
         list.append(21);
