@@ -1,4 +1,4 @@
-
+//this is applicable for singly linked list
     //add at certain index using recursion
     public void insertAt(int index, int value){
         Head= helper(value,index,Head);
