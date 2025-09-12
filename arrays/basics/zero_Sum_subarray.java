@@ -15,3 +15,28 @@ public static boolean hasZeroSumSubarray(int[] arr) {
 
         return false;
     }
+//just in case they want sub array 
+public static int[] findZeroSumSubarray(int[] arr) {
+        Map<Integer, Integer> seenSums = new HashMap<>();
+        int sumSoFar = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            sumSoFar += arr[i];
+
+            // Case 1: from beginning to i
+            if (sumSoFar == 0) {
+                return Arrays.copyOfRange(arr, 0, i + 1);
+            }
+
+            // Case 2: we saw this sum before
+            if (seenSums.containsKey(sumSoFar)) {
+                int start = seenSums.get(sumSoFar) + 1;
+                return Arrays.copyOfRange(arr, start, i + 1);
+            }
+
+            // store current total with index
+            seenSums.put(sumSoFar, i);
+        }
+
+        return new int[0]; // no subarray found
+    }
