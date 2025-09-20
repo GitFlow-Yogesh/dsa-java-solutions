@@ -15,7 +15,7 @@ public static boolean hasZeroSumSubarray(int[] arr) {
 
         return false;
     }
-//just in case they want sub array 
+//just in case they want sub array = just 3 change for sum with k ntg else so easy 
 public static int[] findZeroSumSubarray(int[] arr) {               //here suppose u get k 
         Map<Integer, Integer> seenSums = new HashMap<>();
         int sumSoFar = 0;
