@@ -16,7 +16,7 @@ public static boolean hasZeroSumSubarray(int[] arr) {
         return false;
     }
 //just in case they want sub array 
-public static int[] findZeroSumSubarray(int[] arr) {
+public static int[] findZeroSumSubarray(int[] arr) {               //here suppose u get k 
         Map<Integer, Integer> seenSums = new HashMap<>();
         int sumSoFar = 0;
 
@@ -24,12 +24,12 @@ public static int[] findZeroSumSubarray(int[] arr) {
             sumSoFar += arr[i];
 
             // Case 1: from beginning to i
-            if (sumSoFar == 0) {
+            if (sumSoFar == 0) {        //instead of zero compare with k 
                 return Arrays.copyOfRange(arr, 0, i + 1);
             }
 
             // Case 2: we saw this sum before
-            if (seenSums.containsKey(sumSoFar)) {
+            if (seenSums.containsKey(sumSoFar)) {        //this and below line check for sum-k instead of sum only 
                 int start = seenSums.get(sumSoFar) + 1;
                 return Arrays.copyOfRange(arr, start, i + 1);
             }
