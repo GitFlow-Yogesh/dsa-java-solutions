@@ -58,7 +58,7 @@ public static void rotateRight(int[] arr, int k) {
 //that's it buddy 
 
 
-//what if i want u to reverse by left .
+//what if i want u to reverse by left means anti-clock wise 
 //same as above just reverse = first reverse first k element and thn reverse remaining elements and reverse the whole array = thats it other thing r same 
 // Step 1: Reverse first k elements
         reverse(arr, 0, k - 1);
