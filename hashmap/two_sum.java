@@ -7,7 +7,7 @@
             if(map.containsKey(complimant)){
                 return new int[]{map.get(complimant),i};
             }
-            map.put(arr[i],i);
+            map.put(arr[i],i); //look here right side index left side element because we have to return the index not element 
         }
         return new int[]{-1,-1};
     }
